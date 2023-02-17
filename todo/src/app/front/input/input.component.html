@@ -1,0 +1,8 @@
+<form class="form form-group" [formGroup]="login" (ngSubmit)="logg()">
+<input type="text" placeholder="Task Label" formControlName="task" class="from-control"><br>
+<input type="text" placeholder="Description" class="from-control" formControlName="task_data"><br>
+<button type="submit" class="btn btn-success" >Add Task</button>
+</form>
+<br>
+<br>
+<input type="number" placeholder="Enter Id" [(ngModel)]="id" ><button (click)="del(id)">Delete</button>

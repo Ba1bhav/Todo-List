@@ -1,0 +1,21 @@
+<p>output works!</p>
+<table class="table table-stripped">
+    <thead>
+        <tr>
+        <th>Task</th>
+        <th>Description</th>
+        </tr>
+    </thead>
+    <ng-container >
+        <tbody *ngFor="let i of db;">
+            <tr>
+              <td>{{i.task}}</td>
+              <td>{{i.task_data}}</td>
+            </tr>
+          </tbody>
+    </ng-container>
+</table>
+<!-- {{data|json}}
+{{db|json}} -->
+    
+   
